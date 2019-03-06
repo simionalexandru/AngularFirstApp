@@ -1,0 +1,11 @@
+
+<h2>Todo-list works!</h2> 
+<!-- <app-todo-reduce [todo] = "todos[0]"></app-todo-reduce>
+<app-todo-reduce [todo] = "todos[1]"></app-todo-reduce>
+<app-todo-reduce [todo] = "todos[2]"></app-todo-reduce>
+<app-todo-reduce [todo] = "todos[3]"></app-todo-reduce>
+<app-todo-reduce [todo] = "todos[4]"></app-todo-reduce>
+<app-todo-reduce [todo] = "todos[5]"></app-todo-reduce> -->
+<app-todo-reduce *ngFor = "let currentToDO of todosArray" [todoInput] = "currentToDO"
+(onCheckToDoEvent)="onCheckToDoFromReduce($event)"
+></app-todo-reduce>
